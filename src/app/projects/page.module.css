@@ -1,0 +1,86 @@
+.h1{
+    font-size: xx-large;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #ffffff;
+}
+
+
+
+
+.mainbox {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+    backdrop-filter: blur(0.5px); 
+
+  }
+  
+  .box {
+    flex: 1; /* Ensures all boxes are the same size */
+    padding: 20px;
+    backdrop-filter: blur(90px); 
+
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .box h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+  }
+  
+  .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .three-box-section {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+
+  .blurrybutton {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px); /* Apply blurry background effect */
+    -webkit-backdrop-filter: blur(5px); /* Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .blurrybutton:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken on hover */
+    transform: translateY(-3px); /* Lift on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  }
+
+  .blurrybutton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6); /* Focus outline */
+  }
